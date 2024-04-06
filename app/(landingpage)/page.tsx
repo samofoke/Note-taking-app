@@ -1,3 +1,4 @@
+import Footer from "../_components/Footer";
 import Heading from "../_components/heading";
 import HeroesSection from "../_components/heroes";
 
@@ -8,6 +9,7 @@ const LangingPage = () => {
         <Heading />
         <HeroesSection />
       </div>
+      <Footer />
     </div>
   );
 };

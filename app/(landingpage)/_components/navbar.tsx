@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { useConvexAuth } from "convex/react";
 import { SignInButton } from "@clerk/clerk-react";
+import { DynamicLoader } from "@/components/loader/loader";
 
 const Navbar = () => {
   const { isLoading, isAuthenticated } = useConvexAuth();
@@ -21,7 +22,7 @@ const Navbar = () => {
     >
       <Logo />
       <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
-        {isLoading && <p>The auth is loading</p>}
+        {isLoading && <DynamicLoader />}
         {!isAuthenticated && !isLoading && (
           <>
             <SignInButton mode="modal">

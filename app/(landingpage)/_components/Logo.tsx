@@ -15,6 +15,14 @@ const Logo = () => {
         height="50"
         width="50"
         src="/logo-black-transparent.png"
+        className="dark:hidden"
+      />
+      <Image
+        alt="logo"
+        height="50"
+        width="50"
+        src="/logo-white-transparent.png"
+        className="hidden dark:block"
       />
       <p className={cn("font-semibold", font.className)}>Motion</p>
     </div>

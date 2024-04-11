@@ -35,3 +35,7 @@ npx shadcn-ui@latest init                                     ✔
 ✔ Would you like to use CSS variables for colors? … no / yes
 
 ```
+
+## setting up convex and clerk
+- We start by login and getting ```npm install convex``` into your nextjs project and run npx convex dev and follow the instruction and do not close the terminal for your need convex to be runing.
+- after ```npm install @clerk/next.js``` and create new project on clerk and after copy the env.local in your .env and after create a conex JWT template.

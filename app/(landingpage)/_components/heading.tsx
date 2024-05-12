@@ -35,7 +35,7 @@ const Heading = () => {
         </Button>
       )}
       {!isAuthenticated && !isLoading && (
-        <SignInButton>
+        <SignInButton mode="modal">
           <Button>
             Get Motion Free
             <ArrowRight className="h-4 w-4 ml-2" />
